@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn English</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        
+        .english-side {
+            margin: 19%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+        .russian-side{
+            margin: 19%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+        .for_text {
+            
+            font-size: 20px;
+            margin: 1%;
+            padding: 1%;
+        }
+        #for_input{
+            height: 30px;
+            width: 200px;
+            margin: 2%;
+            padding: 1%;
+        }
+        #for_input2{
+            height: 30px;
+            width: 200px;
+            margin: 2%;
+            padding: 1%;
+        }
+        #for_input3{
+            height: 30px;
+            width: 200px;
+            margin: 2%;
+            padding: 1%;
+        }
+        .for2_but{
+            background-color: blue;
+            width: 100px;
+            height: 30px;
+            border-radius: 50px;
+            margin-left: 20px;
+        }
+        #result{
+            font-weight: bold;
+            margin-top: 5px;
+            margin-left: 2%;
+            margin-top: 1%;
+            font-size: 20px;
+        }
+        #result2{
+            font-weight: bold;
+            margin-top: 5px;
+            margin-left: 2%;
+            margin-top: 1%;
+            font-size: 20px;
+        }
+        #result3{
+            font-weight: bold;
+            margin-top: 5px;
+            margin-left: 2%;
+            margin-top: 1%;
+            font-size: 20px;
+        }
+        #result4{
+            font-weight: bold;
+            font-size: 20px;
+            margin: 1%;
+            padding: 1%;
+        }
+        #result5{
+            font-weight: bold;
+            font-size: 20px;
+            margin: 1%;
+            padding: 1%;
+        }
+        #result6{
+            font-weight: bold;
+            font-size: 20px;
+            margin: 1%;
+            padding: 1%;
+        }
+        #result7{
+            font-weight: bold;
+            font-size: 20px;
+            margin: 1%;
+            padding: 1%;
+        }
+        #result8{
+            font-weight: bold;
+            font-size: 20px;
+            margin: 1%;
+            padding: 1%;
+        }
+        #result9{
+            font-weight: bold;
+            font-size: 20px;
+            margin: 1%;
+            padding: 1%;
+        }
+        #result10{
+            font-weight: bold;
+            font-size: 20px;
+            margin: 1%;
+            padding: 1%;
+        }
+        .for_h{
+            margin: 2%;
+        }
+        .for_h2{
+            margin: 3%;
+        }
+        .for_image{
+            margin: 6%;
+        }
+        .for_body{
+            background-color: rgb(46, 117, 113);
+        }
+    </style>
+</head>
+<body class="for_body">
+    <h1  class="for_h">Learn English together!</h1>
+
+    <h1 class="for_h2">1) Make up sentences from these words. You can use your own words.
+    </h1>
+
+    <div class="card" onclick="flipCard(this)" style="styles.card">
+        <div class="english-side" style="">
+                <b >a beard</b>
+        </div>
+        <div class="russian-side">
+                <b >с бородой</b>
+        </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)" style="color: randomColor()">
+        <div class="english-side">
+            <b>freckles
+            </b>
+        </div>
+        <div class="russian-side">
+            <b>веснушки</b>
+        </div>
+    </div>
+    
+     <div class="card" onclick="flipCard(this)" style="styles.card">
+        <div class="english-side">
+            <b>sociable</b>
+        </div>
+        <div class="russian-side">
+            <b>общительный</b>
+        </div>
+    </div>
+    
+    
+     <div class="card" onclick="flipCard(this)" style="styles.card">
+        <div class="english-side">
+            <b>trust</b>
+        </div>
+        <div class="russian-side">
+            <b>доверять</b>
+        </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)" style="styles.card">
+        <div class="english-side">
+            <b>charming
+            </b>
+        </div>
+        <div class="russian-side">
+            <b>очаровательный</b>
+        </div>
+    </div>
+    
+     <div class="card" onclick="flipCard(this)" style="styles.card">
+        <div class="english-side">
+            <b>a friend
+            </b>
+        </div>
+        <div class="russian-side">
+            <b>друг</b>
+        </div>
+    </div>
+    <!-- Добавь больше карточек по аналогии -->
+    
+    <h1 class="for_h">2) Tricky words!</h1>
+    <h2 class="for_h2">Match the two parts.
+    </h2>
+    <span>
+        <p class="for_text">1. let 	
+            2. lend	
+            3. be full of	
+            4. bring	
+            5. rely 	
+            6. get well	
+            7. deal	
+            8. spend	
+            </p>
+        
+        <p class="for_text">A. beans	
+            B. on parents, close friends
+            C. with classmates and teachers	
+            D. the cat  out of the bag	
+            E. somebody together 	
+            F. a helping hand
+            G. time together
+            H. with teachers	
+            </p>
+        
+            <div>
+                <input id="for_input" type="text"  placeholder="введите комбинацию">
+                <button class="for2_but" onclick="checkCombination()">Проверить</button>
+                <p id="result"></p>
+            </div>
+    </span>
+
+
+
+
+
+
+
+    <h1 class="for_h">3) sticky words!</h1>
+    <h2 class="for_h2">Choose the right synonym.
+
+    </h2>
+    <span>
+        <p class="for_text">1. appreciate -	
+            a) value                                                      b) trust
+
+            2. bear in mind -
+            a) prepare                                                   b) remember
+                
+            3. a close friend -
+            a) a friend you can trust                             b) you know only his or her name
+                
+            4. to bring people together -
+            a) to unite people                                        b) to separate people
+
+            5. chit-chat -
+            a) gossip                                                     b) to greet smb. friendly
+
+            6. trustworthy people -
+            a) people you can share secrets                 b) people who you don’t share your life
+            7. to be passionate about -
+            a) be eager for                                           b) dislike
+
+            8. an acquaintance -
+            a) someone you know a little                    b) your close friend
+                
+            </p>
+        
+        
+            <div>
+                <input id="for_input2" type="text"  placeholder="введите комбинацию">
+                <button class="for2_but" onclick="checkCombination2()">Проверить</button>
+                <p id="result2"></p>
+            </div>
+    </span>
+
+
+
+
+
+
+
+
+    <h1 class="for_h">4) arrr!</h1>
+    <h2 class="for_h2">Choose the correct variant.
+
+
+    </h2>
+    <span>
+        <p class="for_text">
+            1. ____ car is much cheaper than _____ .
+a) me … you, b) my …yours, c) mine … yours
+2. Little Bob doesn’t like _____ new shorts.
+a) he, b) him, c) his
+3. Now all your problems are solved. Help us with _____ .
+a) our, b) ours, c) their
+4. The guinea-pig is eating _____ food with pleasure.
+a) his, b) her, c) its
+5.  Friend of _____ tells very funny stories.
+a) mine, b) my, c) me
+6. Tony always helps _____ wife to look after _____ children.
+a)  hers … our, b) his …their, c) he … ours
+7. This is _____ uncle and _____ new wife.
+a) mine … his, b) my … his, c) me … hers
+8. She is not as intelligent as that friend of _____ .
+a) her, b) hers, c) heir
+9. Speaking about your new clock, _____ price is higher than _____ quality.
+a)  their … their, b) his… his, c) its ... its
+10. Look, it’s Helen! _____ way of thinking is as unusual as those clothes of ____.
+a) her ... hers, b) he … its, c) its … he
+
+            </p>
+        
+        
+            <div>
+                <input id="for_input3" type="text"  placeholder="введите комбинацию">
+                <button class="for2_but" onclick="checkCombination3()">Проверить</button>
+                <p id="result3"></p>
+            </div>
+</span>
+
+
+
+
+<h1 class="for_h">5) sticky words!</h1>
+    <h2 class="for_h2">Find mistakes in spelling words.</h2>
+    <span>
+        <p class="for_text">
+            1. a maustache
+            2. a biard
+            3. frackles
+            4. heizel eyes
+            5. intilligent
+            6. soshiable
+            7. apprciate
+            8. passinate
+            9. trastworthy
+            10. chit-chet
+            11. tim up
+
+        </p>
+        <div>
+            <button class="for2_but" onclick="check1()">Проверить</button>
+            <p id="result4"></p>
+        </div>
+    </span>
+
+
+
+<h1 class="for_h">5.1) sticky words!</h1>
+    <h2 class="for_h2">Make new words using suffixes and prefixes –ness, -ship, dis-, un-, mis-, -th.</h2>
+    <span>
+        <p class="for_text">
+            Kind, honesty, appear, selfish, understanding, discovered, friend, covered, known, good, true, useful, companion.
+         </p>
+        
+        
+        <div>
+            <button class="for2_but" onclick="check2()">Проверить</button>
+             <p id="result5"></p>
+        </div>
+</span>
+
+
+
+<h1 class="for_h">6) sticky words!</h1>
+    <h2 class="for_h2">Translate the words into English.</h2>
+    <span>
+        <p class="for_text">
+            1. близкий друг
+            2. знакомый
+            3. сплетничать
+            4. отношение
+            5. честный
+            6. ценить
+            7. соединять
+            8. недопонимание
+            9. умный
+            10. общительный
+            11. эгоистичный
+            12. обращать с кем-либо
+            13. надёжный
+            14. объединить
+            15. стоящий
+         </p>
+        <div>
+            <button class="for2_but" onclick="check3()">Проверить</button>
+             <p id="result6"></p>
+        </div>
+</span>
+
+
+
+<h1 class="for_h">7) sticky words!</h1>
+    <h2 class="for_h2">Write the missing letters.</h2>
+    <span>
+        <p class="for_text">
+            t_ _m up,
+            s_c_able,
+            int_ll_g_nt,
+            tr_stw_rthy,
+            acq_ _ _ntance,
+            appr_c_ _te,
+            s_lf_shness,
+            a ch_t-ch_t,
+         </p>
+        <div>
+            <button class="for2_but" onclick="check4()">Проверить</button>
+             <p id="result7"></p>
+        </div>
+</span>
+
+
+<h1 class="for_h">8) sticky words!</h1>
+    <h2 class="for_h2">
+        Complete these sentences using possessive pronouns or absolute possessive pronouns.
+    </h2>
+    <span>
+        <p class="for_text">
+            1. _____ friend is very sociable. What about ______?
+            2. I wouldn’t choose an unreliable person to be ____ friend.
+            3. _______ is a close friend, too.
+            4. Look at the children. We can see the girl is absolutely happy with her parents. Is the boy happy with ______?
+            5. We have listened to a lot of children. The twins sang last, but ______ was the best song and the best performance.
+            6. I have a close-knit family. ______ friend’s family is close-knit, too.
+            7. My brother bought that new mobile phone two days ago. That car is ____.
+            8. It’s not ours, it’s _____. They bought it yesterday.
+            9. The kitten was hungry and tired, so it ate all ____ food and fell asleep.
+            10. What do you like to do in _____ free time?
+         </p>
+        <div>
+            <button class="for2_but" onclick="check5()">Проверить</button>
+             <p id="result8"></p>
+        </div>
+</span>
+
+
+<h1 class="for_h">9) sticky words!</h1>
+    <h2 class="for_h2">
+        Translate into Russian.
+    </h2>
+    <span>
+        <p class="for_text">
+            1. We’ve been classmates since the first form.
+            2. My friend is really charming and friendly.
+            3. Susan has got hazel eyes, long eyelashes and straight blond hair. 
+            4. Tom hasn’t got a beard, a moustache and any freckles.
+            5. Mary has a lot of make-up on.
+            6. My friend always helps me (to) sort out my problems. 
+            7. I think Alex is easy to deal with and we have a lot in common.
+            8. We’re both interested in fashion and passionate about surfing the Net.
+            9. The best thing about my friend is her kindness. 
+            10. All my classmates adore Kate because she’s always ready to help and she’s very sociable. 
+         </p>
+        <div>
+            <button class="for2_but" onclick="check6()">Проверить</button>
+             <p id="result9"></p>
+        </div>
+</span>
+
+
+<h1 class="for_h">9.1) sticky words!</h1>
+    <h2 class="for_h2">
+        Translate into English.
+    </h2>
+    <span>
+        <p class="for_text">
+            1. Мы лучшие друзья.
+            2. Макс хорошо ладит со своим братом.
+            3. У нас много общего.
+            4. Я доверяю своему другу и делюсь с ним секретами.
+            5. Ты всегда можешь положиться на меня.
+            6. Только честные люди могут иметь близких друзей.
+            7. Мой друг умный и общительный.
+            8. Ты можешь делится секретами с человеком только тогда, когда ты уверен, что он тебя не предаст.
+            9. Я увлекаюсь спортом: футболом и волейболом.
+            10. Знакомый – это тот, на кого ты не можешь положиться. 
+            11. Ты хорошо ладишь с одноклассниками.
+            12. В нашей дружбе я ценю то, что всегда могу положиться на моего друга.
+            13. Мой друг всегда протянет мне руку помощи и никогда не расскажет мои секреты. 
+         </p>
+        <div>
+            <button class="for2_but" onclick="check7()">Проверить</button>
+             <p id="result10"></p>
+        </div>
+</span>
+
+
+
+<h1 class="for_h">10) sticky photos!</h1>
+    <h2 class="for_h2">
+        Find the differences. Speak about them.
+    </h2>
+    <span>
+        <div class="for_image">
+            <img src="sourse/1124.png"/>
+        </div>
+</span>
+
+
+
+
+    <script>
+        function flipCard(card) {
+            const englishSide = card.querySelector('.english-side');
+            const russianSide = card.querySelector('.russian-side');
+
+            if (englishSide.style.display === 'block') {
+                englishSide.style.display = 'none';
+                russianSide.style.display = 'block';
+            } else {
+                englishSide.style.display = 'block';
+                russianSide.style.display = 'none';
+            }
+        }
+
+        function randomColor() {
+            const colors = ["red", "blue", "yellow", "green", "violet", "orange", "cyan"];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        function checkCombination() {
+            const userInput = document.getElementById("for_input").value;
+            const correctCombination = "1D2F3A4E5B6C7H8G";
+
+            console.log('useriNPUT:', userInput);
+            console.log('correctComb:', correctCombination);
+
+            if (userInput === correctCombination) {
+                document.getElementById("result").textContent = "Правильно!";
+            } else {
+                document.getElementById("result").textContent = "Неправильно. Попробуйте снова.";
+            }
+        }
+
+        function checkCombination2() {
+            const userInput = document.getElementById("for_input2").value;
+            const correctCombination = "1A2B3A4A5A6A7A8A";
+
+            console.log('useriNPUT:', userInput);
+            console.log('correctComb:', correctCombination);
+
+            if (userInput === correctCombination) {
+                document.getElementById("result2").textContent = "Правильно!";
+            } else {
+                document.getElementById("result2").textContent = "Неправильно. Попробуйте снова.";
+            }
+        }
+
+        function checkCombination3() {
+            const userInput = document.getElementById("for_input3").value;
+            const correctCombination = "1B2C3B4C5A6B7B8B9C10A";
+
+            console.log('useriNPUT:', userInput);
+            console.log('correctComb:', correctCombination);
+
+            if (userInput === correctCombination) {
+                document.getElementById("result3").textContent = "Правильно!";
+            } else {
+                document.getElementById("result3").textContent = "Неправильно. Попробуйте снова.";
+            }
+        }
+
+        function check1() {
+            document.getElementById("result4").textContent = "1. a mOustache 2. a bEard 3. frEckles 4. hAzel eyes 5. intElligent 6. soCiable 7. appreCiate 8. passiOnate 9. trUstworthy 10. chit-chAt 11. tEAm up";
+        }
+
+        function check2() {
+            document.getElementById("result5").textContent = "Kindness, dishonesty, disappear, selfishness, misunderstanding, undiscovered, friendship, discovered, unknown, goodness, truth, usefulness, companionship.";
+        }
+
+        function check3() {
+            document.getElementById("result6").textContent = "1. a close friend 2. an acquaintance 3. chit-chat, gossip 4. relationship 5. honest6. appreciate 7. bring together 8. misunderstanding 9. intelligent 10. sociable 11. selfish 12. treat with smb 3. trustworthy 14. team up 15. worthwhile";
+        }
+        function check4() {
+            document.getElementById("result7").textContent = "team up, sociable, intelligent, trustworthy, acquaintance, appreciate, selfishness, a chit-chat";
+        } 
+        function check5() {
+            document.getElementById("result8").textContent = "1. My, yours 2. my 3. He| She 4. his 5. theirs 6. My 7. his 8. theirs 9. its 10. your";
+        } 
+        function check6() {
+            document.getElementById("result9").textContent = "1. Мы - одноклассники с первого класса. 2. Мой друг действительно обаятельный и дружелюбный. 3. У Сьюзен карие глаза, длинные ресницы и прямые светлые волосы. 4. У Тома нет бороды, усов и никаких веснушек. 5. На Мэри много макияжа.6. Мой друг всегда помогает мне разобраться с моими проблемами. 7. Я думаю, с Алекс легко иметь дело, и у нас много общего. 8. Мы оба интересуемся модой и увлечены поиском в интернете.9. Самое лучшее в моей подруге - это её доброта. 10. Все мои одноклассники обожают Кейт, потому что она всегда готова помочь и она очень общительная.";
+        } 
+        function check7() {
+            document.getElementById("result10").textContent = "1. We are best friends. 2. Max gets along well with his brother. 3. We have a lot in common. 4. I trust my friend and share secrets with him.5. You can always rely on me. 6. Only honest people can have close friends. 7. My friend is intelligent and sociable. 8. You can share secrets with a person only when you are sure that he will not betray you. 9. I am passionate about sports: football and volleyball. 10. An acquaintance is someone you can't rely on. 11. You get along well with your classmates. 12. In our friendship I appreciate that I can always rely on my friend. 13. My friend always gives me a helping hand and never tells my secrets (doesn’t let the cat out of the bag).";
+        } 
+    </script>
+</body>
+</html>
+
+
